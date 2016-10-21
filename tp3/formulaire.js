@@ -5,7 +5,7 @@ var date=$("#Date").val(); 
 var adresse=$("#adresse").val(); 
 var mail=$("#mail").val(); 
 if(nom.length != 0&&prenom.length !=0 && date.length != 0 && adresse.length != 0 && mail.length != 0 )   
-$('#resultat').modal() 
+$('#resultat').modal("show") 
 else   
-$('#myModal').modal() 
+$('#myModal').modal("show") 
 });
