@@ -15,9 +15,40 @@
         <!--<script src="main.js"></script>-->
     </head>
     <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+        <fieldset>
+            <h1>TP AW - FORMULAIRE v2</h1>
+            <a>avec bootstrap & jQuery</a>
+            <form action="page2.html" method="post">
+                <table style="width:80%">
+                    <tr>
+                        <td>Nom*</td>
+                        <td><input type="text" id="nom" name="nom" placeholder="Entrez votre nom"  required/></td>
+                    </tr>
+                    <tr>
+                        <td>Prénom*</td>
+                        <td><input type="text" id="prenom" name="Prénom" placeholder="Entrez votre Prénom"  required/></td>
+                    </tr>
+                    <tr>
+                        <td>Date de naissance*</td>
+                        <td><input type="text" id="date" name="date" placeholder="JJ/MM/AAAA" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Adresse*</td>
+                        <td><input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Mail*</td>
+                        <td><input type="text" id="mail" name="mail" placeholder="entrer votre mail"  required/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="2" ><input type="button" value="valider" onclick="validation()" class="bouton1"/></td>
+                    </tr>
+</table>
+            </br>
+            </br>
+        <div id="error" class="div1"></div>
+        <div id="resultat" class="div2"></div>
+        </fieldset>
     </body>
 </html>
