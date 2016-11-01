@@ -1,11 +1,25 @@
-$(fonction(){ 
-var nom=$("#Nom").val();  
-var prenom=$("#Prénom").val(); 
-var date=$("#Date").val(); 
-var adresse=$("#adresse").val(); 
-var mail=$("#mail").val(); 
-if(nom.length != 0&&prenom.length !=0 && date.length != 0 && adresse.length != 0 && mail.length != 0 )   
-$('#resultat').modal("show") 
-else   
-$('#myModal').modal("show") 
+$( document ).ready(function() {
+
+	nom = document.getElementById('Nom');
+	prenom = document.getElementById('prenom');
+	dateNaissance = document.getElementById('Date');
+	adresse = document.getElementById('adresse');
+	mail = document.getElementById('mail');
+
+	$('#valider').click(function(e){
+	    e.preventDefault();
+	    var mymodal = $('#myModal');
+
+	    if(nom.value == '' || prenom.value == '' || dateNaissance.value == '' || adresse.value == '' || adresse.value == '' ){
+	    	mymodal.find('.modal-body').text('Veuillez saisir tout les champs !');
+	   		$(".modal").modal('show')
+
+	   	} else {
+	   		mymodal.find('.modal-title').text('Bonjour ' + nom.value + " " + prenom.value);
+	   		mymodal.find('.modal-body').text('Vous êtes nés le : ' + dateNaissance.value + " et vous habitez : ");
+	   		$(".modal").modal('show')
+
+	   	}
+  });
+
 });
