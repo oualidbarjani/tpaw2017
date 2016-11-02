@@ -1,23 +1,99 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP4</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>TP4</title>
+      <meta name="description" content="formulaire">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <!-- Place favicon.ico in the root directory -->
+      <script src="formulaire.js"></script>
+      <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+      <!--<link rel="stylesheet" href="style.css">-->
+      <!--<script src="main.js"></script>-->
+   </head>
+   <body>
+      <h1>TP AW - FORMULAIRE v2</h1>
+      <p>HTML5 : GPS,Local storage</p>
+      </br>
+      </br>
+	  
+			  <form class="form-horizontal" method="post">
+			  <div class="form-group">
+				 <label for="nom" class="col-sm-2 control-label">Nom*</label>
+				 <div class="col-sm-7">
+					<input type="text" class="form-control" id="Nom" value="">
+					<div id="compteur"></div>
+				 </div>
+			  </div>
+			  </br>
+			  <div class="form-group">
+				 <label for="Prenom" class="col-sm-2 control-label">Prénom*</label>
+				 <div class="col-sm-7">
+					<input type="text" class="form-control" id="prenom" >
+					<div id="compteur1"></div>
+				 </div>
+			  </div>
+			  </br>
+			  <div class="form-group">
+				 <label for="Date" class="col-sm-2 control-label">Date de naissance*</label>
+				 <div class="col-sm-7">
+					<input type="Date" class="form-control" id="Date" placeholder="JJ/MM/AAAA" max="2013-12-25" min="1992-12-25"><div id="compteur2"></div>              
+				 </div>
+			  </div>
+			  </br>
+			  <div class="form-group">
+						 <label for="adresse" class="col-sm-2 control-label">Adresse*</label>   
+						 <div class="col-sm-5">
+							<input type="text" class="form-control" id="adresse" >
+							<button id="gps" type="button" class="btn btn-info btn-lg" onclick="getLocation()">GPS</button>
+						 </div>
+						 
+							<div id="compteur3"></div>
+				 </div>
+				 
+			  
+			  </br>
+			  <div class="form-group">
+				 <label for="mail" class="col-sm-2 control-label">Mail*</label>
+				 <div class="col-sm-7">
+					<input type="email" class="form-control" id="mail" ><div id="compteur4"></div>
+				 </div>
+			  </div>
+			  </br>
+			  <div class="form-group">
+				 <div class="col-sm-offset-2 col-sm-10">
+							<button id="valider" type="button" class="btn btn-info btn-lg" data-target="#myModal">Valider</button>
+				 </div>
+				 </div id="result">hhhh</div>
+			  </div>   
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>TP4</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+			  <!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+			  <div class="modal-dialog">
+			  
+				<!-- Modal content-->
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Message modal</h4>
+				  </div>
+				  <div class="modal-body">
+					<p></p>
+				  </div>
+				  <div class="modal-maps">
+					</div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+				  </div>
+				</div>
+			</div>
+		  </div>
+
+			 
+   </body>
 </html>
