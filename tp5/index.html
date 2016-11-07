@@ -1,23 +1,41 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP5</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+   <head>
+   <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>TP4</title>
+      <meta name="description" content="formulaire">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="meteo.js"></script>
+   </head>
+   <body>
+  
+  <form id="rechercheville">
+		<div class="row">
+		  <div class="col-lg-6">
+			<div class="input-group">
+			  <span class="input-group-btn">
+				<button class="btn btn-default" type="submit">GPS</button>
+			  </span>
+			  <input type="text" class="form-control" placeholder="entrer votre ville" name="ville" id="ville">
+			   <span class="input-group-btn">
+				<button class="btn btn-default" type="submit">Rechercher</button>
+			  </span>
+			</div><!-- /input-group -->
+		  </div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
+	</form>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>TP5</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+<div id="result1"></div>
+<div id="result2"></div>
+<img src="" id="icone"/>
+
+<div id="result3"></div>
+<div id="result4"></div>
+<div id="result5"></div>
+<div id="result6"></div>
+			 
+   </body>
 </html>
