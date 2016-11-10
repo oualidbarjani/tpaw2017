@@ -1,46 +1,92 @@
-<!doctype html>
+
+
+<!DOCTYPE html>
+
 <html>
-   <head>
-   <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>TP4</title>
-      <meta name="description" content="formulaire">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet"
-         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	  <script src="meteo.js"></script>
-   </head>
-   <body>
-  
-  <form id="rechercheville">
-		<div class="row">
-		  <div class="col-lg-3">
-			<div class="input-group">
-			  <span class="input-group-btn">
-				<button class="btn btn-default" type="button" onclick="getLocation()">GPS</button>
-			  </span>
-			  <input type="text" class="form-control" placeholder="entrer votre ville" name="ville" id="ville">
-			   <span class="input-group-btn">
-				<button class="btn btn-default" type="submit">Rechercher</button>
-			  </span>
-			</div><!-- /input-group -->
-		  </div><!-- /.col-lg-6 -->
-		</div><!-- /.row -->
-	</form>
+
+    <head>
+
+        <meta charset="utf-8"/>
+
+        <title>tp5</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+
+    </head>
+
+<body>
 
 
-<div class="list-group" >
-  <a class="list-group-item" id="result1" ></a>
-  <img src="" id="icone"/>
-  <a  class="list-group-item" id="result2"></a>
-  <a  class="list-group-item" id="result3"></a>
-  <a  class="list-group-item" id="result4"></a>
-  <a  class="list-group-item" id="result5"></a>
-  <a  class="list-group-item" id="result6"></a>
+<form id="searchCity">
+
+<div class="row">
+
+<div class="col-lg-offset-3 col-lg-6">
+
+  <div class="input-group">
+
+    <span class="input-group-btn">
+
+      <button class="btn btn-default" id="gps" type="button" >GPS</button>
+
+    </span>
+
+    <input type="search" class="form-control" id="city" placeholder="votre ville">
+
+    <span class="input-group-btn">
+
+      <button class="btn btn-default" id="RC" type="submit" >Recherche</button>
+
+    </span>
+
+  </div>
+
 </div>
 
-<div id="gps"></div>
-	
-			 
-   </body>
+</div>
+
+</form>
+
+
+
+
+<center>
+
+    <div id="result">
+
+        <div class="container">
+
+            <h2 id="name"></h2>
+
+            <div id="time"></div>        <div id="hr"></div>            <img src="" id="icon">
+
+                <div id="hr6"></div>            <div id="temp"></div>
+
+            <div id="hr1"></div>            <div id="Humidity"></div>
+
+            <div id="hr2"></div>            <div id="nuage"></div>
+
+            <div id="hr3"></div>            <div id="temps"></div>
+
+            <div id="hr4"></div>            <div id="vent"></div>
+
+            <div id="hr5"></div>            <div id="demo"></div>
+
+            
+
+        </div>
+
+    </div>
+
+    </center>
+
+    <script src="meteo.js"></script>
+
+</body>
+
 </html>
