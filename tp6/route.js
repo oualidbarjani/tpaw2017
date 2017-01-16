@@ -20,4 +20,4 @@ controller : 'ParamController',  templateUrl : 'html/param.html'
 
 });
 
-});
+}]);
